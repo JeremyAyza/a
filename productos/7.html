@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manzanas Orgánicas - EcoMarket</title>
+    <title>Fresas Orgánicas - EcoMarket</title>
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -30,13 +30,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="../index.html">Inicio</a>
+              <a class="nav-link" href="/index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="../productos.html">Productos</a>
+              <a class="nav-link active" href="/productos.html">Productos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../contacto.html">Contacto</a>
+              <a class="nav-link" href="/contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -48,15 +48,15 @@
       <div class="container">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
             <li class="breadcrumb-item">
-              <a href="productos.html">Productos</a>
+              <a href="/productos.html">Productos</a>
             </li>
             <li class="breadcrumb-item">
-              <a href="productos.html?categoria=frutas">Frutas</a>
+              <a href="/productos.html?categoria=frutas">Frutas</a>
             </li>
             <li class="breadcrumb-item active" aria-current="page">
-              Manzanas Orgánicas
+              Fresas Orgánicas
             </li>
           </ol>
         </nav>
@@ -70,22 +70,23 @@
           <!-- Imagen del producto -->
           <div class="col-md-6 mb-4">
             <img
-              src="/img/1.jpeg"
-              alt="Manzanas Orgánicas"
+              src="/img/7.png"
+              alt="Fresas Orgánicas"
               class="img-fluid rounded"
             />
           </div>
 
           <!-- Información del producto -->
           <div class="col-md-6">
-            <h1>Manzanas Orgánicas</h1>
+            <h1>Fresas Orgánicas</h1>
             <div class="product-category mb-2">
               <span class="badge bg-success">Frutas</span>
             </div>
-            <h2 class="text-success mb-3">S/ 2.99</h2>
+            <h2 class="text-success mb-3">S/ 4.99</h2>
             <p class="mb-4">
-              Manzanas orgánicas frescas cultivadas sin pesticidas. Perfectas
-              para comer directamente o para preparar postres saludables.
+              Fresas orgánicas cultivadas de manera natural, sin pesticidas ni químicos dañinos. 
+              Dulces, jugosas y con todo su aroma natural. Perfectas para consumir directamente, 
+              en postres, batidos o para decorar tus platos favoritos.
             </p>
 
             <!-- Características del producto -->
@@ -93,10 +94,10 @@
               <h4>Características:</h4>
               <ul>
                 <li>100% orgánicas</li>
-                <li>Sin pesticidas ni químicos</li>
-                <li>Cultivadas localmente</li>
-                <li>Ricas en fibra y antioxidantes</li>
-                <li>Frescas y jugosas</li>
+                <li>Cultivadas sin pesticidas ni químicos</li>
+                <li>Color rojo intenso</li>
+                <li>Sabor dulce y aroma intenso</li>
+                <li>Recolectadas en su punto óptimo de maduración</li>
               </ul>
             </div>
 
@@ -104,10 +105,11 @@
             <div class="product-benefits mb-4">
               <h4>Beneficios para la salud:</h4>
               <ul>
-                <li>Ayudan a mantener un sistema digestivo saludable</li>
                 <li>Ricas en vitamina C y antioxidantes</li>
-                <li>Contribuyen a la salud cardiovascular</li>
-                <li>Bajo índice glucémico</li>
+                <li>Ayudan a reforzar el sistema inmunológico</li>
+                <li>Bajas en calorías y ricas en fibra</li>
+                <li>Contienen minerales esenciales como el potasio y manganeso</li>
+                <li>Favorecen la salud cardiovascular</li>
               </ul>
             </div>
 
@@ -157,7 +159,7 @@
               </div>
               <div class="d-flex">
                 <div class="me-3">📦</div>
-                <div>Disponibilidad: En stock</div>
+                <div>Disponibilidad: En stock (cantidad limitada)</div>
               </div>
             </div>
           </div>
@@ -175,9 +177,9 @@
           <div class="col-md-4 mb-3">
             <h5>Enlaces rápidos</h5>
             <ul class="list-unstyled">
-              <li><a href="index.html" class="text-white">Inicio</a></li>
-              <li><a href="productos.html" class="text-white">Productos</a></li>
-              <li><a href="contacto.html" class="text-white">Contacto</a></li>
+              <li><a href="/index.html" class="text-white">Inicio</a></li>
+              <li><a href="/productos.html" class="text-white">Productos</a></li>
+              <li><a href="/contacto.html" class="text-white">Contacto</a></li>
             </ul>
           </div>
           <div class="col-md-4 mb-3">
@@ -214,7 +216,7 @@
         btnAgregarCarrito.addEventListener("click", function () {
           const cantidad = document.getElementById("cantidad").value
           alert(
-            `Se agregaron S/ {cantidad} kg de Manzanas Orgánicas al carrito.`
+            `Se agregaron ${cantidad} kg de Fresas Orgánicas al carrito.`
           )
         })
       })
