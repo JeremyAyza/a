@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manzanas Orgánicas - EcoMarket</title>
+    <title>Espinacas Frescas - EcoMarket</title>
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -16,7 +16,7 @@
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
       <div class="container">
-        <a class="navbar-brand" href="../index.html">
+        <a class="navbar-brand" href="/index.html">
           <span class="text-success">Eco</span>Market
         </a>
         <button
@@ -30,13 +30,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="../index.html">Inicio</a>
+              <a class="nav-link" href="/index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="../productos.html">Productos</a>
+              <a class="nav-link active" href="/productos.html">Productos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../contacto.html">Contacto</a>
+              <a class="nav-link" href="/contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
@@ -48,15 +48,15 @@
       <div class="container">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
             <li class="breadcrumb-item">
-              <a href="productos.html">Productos</a>
+              <a href="/productos.html">Productos</a>
             </li>
             <li class="breadcrumb-item">
-              <a href="productos.html?categoria=frutas">Frutas</a>
+              <a href="productos.html?categoria=verduras">Verduras</a>
             </li>
             <li class="breadcrumb-item active" aria-current="page">
-              Manzanas Orgánicas
+              Espinacas Frescas
             </li>
           </ol>
         </nav>
@@ -70,33 +70,33 @@
           <!-- Imagen del producto -->
           <div class="col-md-6 mb-4">
             <img
-              src="/img/1.jpeg"
-              alt="Manzanas Orgánicas"
+              src="/img/5.jpg"
+              alt="Espinacas Frescas"
               class="img-fluid rounded"
             />
           </div>
 
           <!-- Información del producto -->
           <div class="col-md-6">
-            <h1>Manzanas Orgánicas</h1>
+            <h1>Espinacas Frescas</h1>
             <div class="product-category mb-2">
-              <span class="badge bg-success">Frutas</span>
+              <span class="badge bg-success">Verduras</span>
             </div>
-            <h2 class="text-success mb-3">S/ 2.99</h2>
+            <h2 class="text-success mb-3">S/ 2.49</h2>
             <p class="mb-4">
-              Manzanas orgánicas frescas cultivadas sin pesticidas. Perfectas
-              para comer directamente o para preparar postres saludables.
+              Espinacas frescas de cultivo responsable con el medio ambiente. Hojas verdes y tiernas, 
+              ideales para ensaladas, salteados, batidos verdes o como complemento en múltiples recetas.
             </p>
 
             <!-- Características del producto -->
             <div class="product-features mb-4">
               <h4>Características:</h4>
               <ul>
-                <li>100% orgánicas</li>
-                <li>Sin pesticidas ni químicos</li>
-                <li>Cultivadas localmente</li>
-                <li>Ricas en fibra y antioxidantes</li>
-                <li>Frescas y jugosas</li>
+                <li>Cultivadas con métodos sostenibles</li>
+                <li>Hojas tiernas y de color verde intenso</li>
+                <li>Cosechadas en su punto óptimo</li>
+                <li>Limpias y listas para consumir</li>
+                <li>Embalaje respetuoso con el medio ambiente</li>
               </ul>
             </div>
 
@@ -104,10 +104,11 @@
             <div class="product-benefits mb-4">
               <h4>Beneficios para la salud:</h4>
               <ul>
-                <li>Ayudan a mantener un sistema digestivo saludable</li>
-                <li>Ricas en vitamina C y antioxidantes</li>
-                <li>Contribuyen a la salud cardiovascular</li>
-                <li>Bajo índice glucémico</li>
+                <li>Excelente fuente de hierro y calcio</li>
+                <li>Rica en vitaminas A, C y K</li>
+                <li>Alto contenido en antioxidantes</li>
+                <li>Ayuda a fortalecer el sistema inmunológico</li>
+                <li>Aporta fibra que beneficia al sistema digestivo</li>
               </ul>
             </div>
 
@@ -175,9 +176,9 @@
           <div class="col-md-4 mb-3">
             <h5>Enlaces rápidos</h5>
             <ul class="list-unstyled">
-              <li><a href="index.html" class="text-white">Inicio</a></li>
-              <li><a href="productos.html" class="text-white">Productos</a></li>
-              <li><a href="contacto.html" class="text-white">Contacto</a></li>
+              <li><a href="/index.html" class="text-white">Inicio</a></li>
+              <li><a href="/productos.html" class="text-white">Productos</a></li>
+              <li><a href="/contacto.html" class="text-white">Contacto</a></li>
             </ul>
           </div>
           <div class="col-md-4 mb-3">
@@ -214,7 +215,7 @@
         btnAgregarCarrito.addEventListener("click", function () {
           const cantidad = document.getElementById("cantidad").value
           alert(
-            `Se agregaron S/ {cantidad} kg de Manzanas Orgánicas al carrito.`
+            `Se agregaron ${cantidad} kg de Espinacas Frescas al carrito.`
           )
         })
       })

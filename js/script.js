@@ -4,7 +4,7 @@ const productos = [
 		id: 1,
 		nombre: "Manzanas Orgánicas",
 		precio: 2.99,
-		imagen: "https://via.placeholder.com/300x200",
+		imagen: "img/1.jpeg",
 		categoria: "frutas",
 		descripcion: "Manzanas orgánicas frescas cultivadas sin pesticidas. Perfectas para comer directamente o para preparar postres saludables."
 	},
@@ -12,7 +12,7 @@ const productos = [
 		id: 2,
 		nombre: "Zanahorias Frescas",
 		precio: 1.49,
-		imagen: "https://via.placeholder.com/300x200",
+		imagen: "img/2.jpg",
 		categoria: "verduras",
 		descripcion: "Zanahorias orgánicas recién cosechadas. Ricas en vitamina A y perfectas para ensaladas o jugos."
 	},
@@ -20,7 +20,7 @@ const productos = [
 		id: 3,
 		nombre: "Arroz Integral",
 		precio: 3.99,
-		imagen: "https://via.placeholder.com/300x200",
+		imagen: "img/3.jpg",
 		categoria: "granos",
 		descripcion: "Arroz integral orgánico de grano largo. Rico en fibra y nutrientes esenciales."
 	},
@@ -28,7 +28,7 @@ const productos = [
 		id: 4,
 		nombre: "Plátanos Orgánicos",
 		precio: 1.99,
-		imagen: "https://via.placeholder.com/300x200",
+		imagen: "img/4.jpg",
 		categoria: "frutas",
 		descripcion: "Plátanos orgánicos madurados naturalmente. Fuente excelente de potasio y energía."
 	},
@@ -36,7 +36,7 @@ const productos = [
 		id: 5,
 		nombre: "Espinacas Frescas",
 		precio: 2.49,
-		imagen: "https://via.placeholder.com/300x200",
+		imagen: "img/5.jpg",
 		categoria: "verduras",
 		descripcion: "Espinacas orgánicas frescas. Ricas en hierro y vitaminas, perfectas para ensaladas y salteados."
 	},
@@ -44,7 +44,7 @@ const productos = [
 		id: 6,
 		nombre: "Lentejas Orgánicas",
 		precio: 2.79,
-		imagen: "https://via.placeholder.com/300x200",
+		imagen: "img/6.jpg",
 		categoria: "granos",
 		descripcion: "Lentejas orgánicas de alta calidad. Excelente fuente de proteínas y fibra."
 	},
@@ -52,7 +52,7 @@ const productos = [
 		id: 7,
 		nombre: "Fresas Orgánicas",
 		precio: 4.99,
-		imagen: "https://via.placeholder.com/300x200",
+		imagen: "img/7.png",
 		categoria: "frutas",
 		descripcion: "Fresas orgánicas dulces y jugosas. Perfectas para postres o para comer directamente."
 	},
@@ -60,7 +60,7 @@ const productos = [
 		id: 8,
 		nombre: "Brócoli Fresco",
 		precio: 2.29,
-		imagen: "https://via.placeholder.com/300x200",
+		imagen: "img/8.jpg",
 		categoria: "verduras",
 		descripcion: "Brócoli orgánico fresco. Rico en vitamina C y antioxidantes."
 	},
@@ -68,7 +68,7 @@ const productos = [
 		id: 9,
 		nombre: "Quinoa Orgánica",
 		precio: 5.99,
-		imagen: "https://via.placeholder.com/300x200",
+		imagen: "img/9.jpg",
 		categoria: "granos",
 		descripcion: "Quinoa orgánica de alta calidad. Superalimento rico en proteínas y todos los aminoácidos esenciales."
 	}
@@ -96,7 +96,7 @@ function cargarProductos(productosArray) {
 					<div class="col-md-4 mb-4">
 							<div class="card product-card" data-id="${producto.id}">
 									<img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
-									<div class="card-body">
+									<div class="card-body ">
 											<h5 class="card-title">${producto.nombre}</h5>
 											<p class="product-price">S/ ${producto.precio.toFixed(2)}</p>
 											<button class="btn btn-outline-success btn-sm view-product">Ver detalles</button>
