@@ -43,26 +43,6 @@
       </div>
     </nav>
 
-    <!-- Migas de pan -->
-    <div class="bg-light py-2">
-      <div class="container">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
-            <li class="breadcrumb-item">
-              <a href="/productos.html">Productos</a>
-            </li>
-            <li class="breadcrumb-item">
-              <a href="/productos.html?categoria=frutas">Frutas</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">
-              Fresas Orgánicas
-            </li>
-          </ol>
-        </nav>
-      </div>
-    </div>
-
     <!-- Detalle del producto -->
     <section class="product-detail py-5">
       <div class="container">
@@ -84,9 +64,10 @@
             </div>
             <h2 class="text-success mb-3">S/ 4.99</h2>
             <p class="mb-4">
-              Fresas orgánicas cultivadas de manera natural, sin pesticidas ni químicos dañinos. 
-              Dulces, jugosas y con todo su aroma natural. Perfectas para consumir directamente, 
-              en postres, batidos o para decorar tus platos favoritos.
+              Fresas orgánicas cultivadas de manera natural, sin pesticidas ni
+              químicos dañinos. Dulces, jugosas y con todo su aroma natural.
+              Perfectas para consumir directamente, en postres, batidos o para
+              decorar tus platos favoritos.
             </p>
 
             <!-- Características del producto -->
@@ -108,7 +89,9 @@
                 <li>Ricas en vitamina C y antioxidantes</li>
                 <li>Ayudan a reforzar el sistema inmunológico</li>
                 <li>Bajas en calorías y ricas en fibra</li>
-                <li>Contienen minerales esenciales como el potasio y manganeso</li>
+                <li>
+                  Contienen minerales esenciales como el potasio y manganeso
+                </li>
                 <li>Favorecen la salud cardiovascular</li>
               </ul>
             </div>
@@ -178,7 +161,9 @@
             <h5>Enlaces rápidos</h5>
             <ul class="list-unstyled">
               <li><a href="/index.html" class="text-white">Inicio</a></li>
-              <li><a href="/productos.html" class="text-white">Productos</a></li>
+              <li>
+                <a href="/productos.html" class="text-white">Productos</a>
+              </li>
               <li><a href="/contacto.html" class="text-white">Contacto</a></li>
             </ul>
           </div>
@@ -215,9 +200,7 @@
 
         btnAgregarCarrito.addEventListener("click", function () {
           const cantidad = document.getElementById("cantidad").value
-          alert(
-            `Se agregaron ${cantidad} kg de Fresas Orgánicas al carrito.`
-          )
+          alert(`Se agregaron ${cantidad} kg de Fresas Orgánicas al carrito.`)
         })
       })
     </script>

@@ -43,26 +43,6 @@
       </div>
     </nav>
 
-    <!-- Migas de pan -->
-    <div class="bg-light py-2">
-      <div class="container">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item"><a href="/index.html">Inicio</a></li>
-            <li class="breadcrumb-item">
-              <a href="/productos.html">Productos</a>
-            </li>
-            <li class="breadcrumb-item">
-              <a href="/productos.html?categoria=granos">Granos</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">
-              Quinoa Orgánica
-            </li>
-          </ol>
-        </nav>
-      </div>
-    </div>
-
     <!-- Detalle del producto -->
     <section class="product-detail py-5">
       <div class="container">
@@ -84,9 +64,10 @@
             </div>
             <h2 class="text-success mb-3">S/ 5.99</h2>
             <p class="mb-4">
-              Quinoa orgánica de la más alta calidad, cultivada de manera sostenible y sin pesticidas. 
-              Un superalimento completo, rico en proteínas y con todos los aminoácidos esenciales. 
-              Perfecta para ensaladas, guarniciones, bowls o como sustituto de arroz.
+              Quinoa orgánica de la más alta calidad, cultivada de manera
+              sostenible y sin pesticidas. Un superalimento completo, rico en
+              proteínas y con todos los aminoácidos esenciales. Perfecta para
+              ensaladas, guarniciones, bowls o como sustituto de arroz.
             </p>
 
             <!-- Características del producto -->
@@ -178,7 +159,9 @@
             <h5>Enlaces rápidos</h5>
             <ul class="list-unstyled">
               <li><a href="/index.html" class="text-white">Inicio</a></li>
-              <li><a href="/productos.html" class="text-white">Productos</a></li>
+              <li>
+                <a href="/productos.html" class="text-white">Productos</a>
+              </li>
               <li><a href="/contacto.html" class="text-white">Contacto</a></li>
             </ul>
           </div>
@@ -215,9 +198,7 @@
 
         btnAgregarCarrito.addEventListener("click", function () {
           const cantidad = document.getElementById("cantidad").value
-          alert(
-            `Se agregaron ${cantidad} kg de Quinoa Orgánica al carrito.`
-          )
+          alert(`Se agregaron ${cantidad} kg de Quinoa Orgánica al carrito.`)
         })
       })
     </script>
