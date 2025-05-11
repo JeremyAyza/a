@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manzanas Orgánicas - EcoMarket</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <span class="text-success">Eco</span>Market
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Migas de pan -->
+    <div class="bg-light py-2">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item">
+              <a href="productos.html">Productos</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="productos.html?categoria=frutas">Frutas</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Manzanas Orgánicas
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Detalle del producto -->
+    <section class="product-detail py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Imagen del producto -->
+          <div class="col-md-6 mb-4">
+            <img
+              src="https://via.placeholder.com/600x400"
+              alt="Manzanas Orgánicas"
+              class="img-fluid rounded"
+            />
+          </div>
+
+          <!-- Información del producto -->
+          <div class="col-md-6">
+            <h1>Manzanas Orgánicas</h1>
+            <div class="product-category mb-2">
+              <span class="badge bg-success">Frutas</span>
+            </div>
+            <h2 class="text-success mb-3">S/ 2.99</h2>
+            <p class="mb-4">
+              Manzanas orgánicas frescas cultivadas sin pesticidas. Perfectas
+              para comer directamente o para preparar postres saludables.
+            </p>
+
+            <!-- Características del producto -->
+            <div class="product-features mb-4">
+              <h4>Características:</h4>
+              <ul>
+                <li>100% orgánicas</li>
+                <li>Sin pesticidas ni químicos</li>
+                <li>Cultivadas localmente</li>
+                <li>Ricas en fibra y antioxidantes</li>
+                <li>Frescas y jugosas</li>
+              </ul>
+            </div>
+
+            <!-- Beneficios para la salud -->
+            <div class="product-benefits mb-4">
+              <h4>Beneficios para la salud:</h4>
+              <ul>
+                <li>Ayudan a mantener un sistema digestivo saludable</li>
+                <li>Ricas en vitamina C y antioxidantes</li>
+                <li>Contribuyen a la salud cardiovascular</li>
+                <li>Bajo índice glucémico</li>
+              </ul>
+            </div>
+
+            <!-- Formulario de compra -->
+            <form class="mb-4">
+              <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                  <label for="cantidad" class="col-form-label">Cantidad:</label>
+                </div>
+                <div class="col-auto">
+                  <input
+                    type="number"
+                    id="cantidad"
+                    class="form-control"
+                    value="1"
+                    min="1"
+                  />
+                </div>
+                <div class="col-auto">
+                  <span class="form-text">(Kg)</span>
+                </div>
+              </div>
+
+              <div class="d-grid gap-2 mt-3">
+                <button
+                  type="button"
+                  class="btn btn-success btn-lg"
+                  id="btnAgregarCarrito"
+                >
+                  Agregar al carrito
+                </button>
+              </div>
+            </form>
+
+            <!-- Información adicional -->
+            <div class="product-info">
+              <div class="d-flex mb-2">
+                <div class="me-3">🚚</div>
+                <div>Envío gratis en pedidos mayores a S/ 30</div>
+              </div>
+              <div class="d-flex mb-2">
+                <div class="me-3">🔄</div>
+                <div>
+                  Garantía de frescura: si no estás satisfecho, te devolvemos tu
+                  dinero
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="me-3">📦</div>
+                <div>Disponibilidad: En stock</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Información nutricional -->
+    <section class="nutrition-info py-4 bg-light">
+      <div class="container">
+        <h3 class="mb-4">Información Nutricional</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <table class="table table-bordered">
+              <thead class="table-success">
+                <tr>
+                  <th colspan="2">Valores nutricionales (por 100g)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Calorías</td>
+                  <td>52 kcal</td>
+                </tr>
+                <tr>
+                  <td>Carbohidratos</td>
+                  <td>14 g</td>
+                </tr>
+                <tr>
+                  <td>Fibra</td>
+                  <td>2.4 g</td>
+                </tr>
+                <tr>
+                  <td>Azúcares</td>
+                  <td>10 g</td>
+                </tr>
+                <tr>
+                  <td>Proteínas</td>
+                  <td>0.3 g</td>
+                </tr>
+                <tr>
+                  <td>Grasas</td>
+                  <td>0.2 g</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-6">
+            <h4>Consejos de almacenamiento:</h4>
+            <p>Para mantener las manzanas frescas por más tiempo:</p>
+            <ul>
+              <li>Guárdalas en el refrigerador para prolongar su frescura</li>
+              <li>Mantenlas separadas de otras frutas que producen etileno</li>
+              <li>Lava las manzanas solo cuando vayas a consumirlas</li>
+              <li>
+                Guárdalas en una bolsa perforada para mantener la humedad
+                adecuada
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Productos relacionados -->
+    <section class="related-products py-5">
+      <div class="container">
+        <h3 class="mb-4">Productos relacionados</h3>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card product-card">
+              <img
+                src="https://via.placeholder.com/300x200"
+                class="card-img-top"
+                alt="Plátanos Orgánicos"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Plátanos Orgánicos</h5>
+                <p class="product-price">S/ 1.99</p>
+                <a href="producto-4.html" class="btn btn-outline-success btn-sm"
+                  >Ver detalles</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card product-card">
+              <img
+                src="https://via.placeholder.com/300x200"
+                class="card-img-top"
+                alt="Fresas Orgánicas"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fresas Orgánicas</h5>
+                <p class="product-price">S/ 4.99</p>
+                <a href="producto-7.html" class="btn btn-outline-success btn-sm"
+                  >Ver detalles</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card product-card">
+              <img
+                src="https://via.placeholder.com/300x200"
+                class="card-img-top"
+                alt="Naranjas Orgánicas"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Naranjas Orgánicas</h5>
+                <p class="product-price">S/ 3.49</p>
+                <a href="#" class="btn btn-outline-success btn-sm"
+                  >Ver detalles</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer-section py-4 bg-dark text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h5>EcoMarket</h5>
+            <p>Productos orgánicos de alta calidad para una vida saludable.</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>Enlaces rápidos</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-white">Inicio</a></li>
+              <li><a href="productos.html" class="text-white">Productos</a></li>
+              <li><a href="contacto.html" class="text-white">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>Contacto</h5>
+            <address>
+              <p>
+                Calle Principal 123<br />
+                Ciudad, CP 12345<br />
+                info@ecomarket.com<br />
+                (123) 456-7890
+              </p>
+            </address>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="mb-0">
+              &copy; 2023 EcoMarket. Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="js/script.js"></script>
+    <script>
+      // Script específico para esta página
+      document.addEventListener("DOMContentLoaded", function () {
+        const btnAgregarCarrito = document.getElementById("btnAgregarCarrito")
+
+        btnAgregarCarrito.addEventListener("click", function () {
+          const cantidad = document.getElementById("cantidad").value
+          alert(
+            `Se agregaron S/ {cantidad} kg de Manzanas Orgánicas al carrito.`
+          )
+        })
+      })
+    </script>
+  </body>
+</html>
