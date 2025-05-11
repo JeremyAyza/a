@@ -92,18 +92,20 @@ function cargarProductos(productosArray) {
 
 	// Agregamos cada producto al contenedor
 	productosArray.forEach(producto => {
-		const productoHTML = `
-					<div class="col-md-4 mb-4">
-							<div class="card product-card" data-id="${producto.id}">
-									<img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
-									<div class="card-body ">
-											<h5 class="card-title">${producto.nombre}</h5>
-											<p class="product-price">S/ ${producto.precio.toFixed(2)}</p>
-											<button class="btn btn-outline-success btn-sm view-product">Ver detalles</button>
-									</div>
-							</div>
-					</div>
-			`;
+const productoHTML = `
+    <div class="col-md-4 mb-4 d-flex">
+        <div class="card product-card flex-grow-1" data-id="${producto.id}">
+            <div class="image-container">
+                <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
+            </div>
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title mb-2">${producto.nombre}</h5> <!-- Added mb-2 -->
+                <p class="product-price mt-auto mb-2">S/ ${producto.precio.toFixed(2)}</p> <!-- Added mb-2 -->
+                <button class="btn btn-outline-success btn-sm view-product mt-auto">Ver detalles</button>
+            </div>
+        </div>
+    </div>
+`;
 
 		productsList.innerHTML += productoHTML;
 	});
